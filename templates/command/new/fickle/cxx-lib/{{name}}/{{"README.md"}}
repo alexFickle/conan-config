@@ -1,0 +1,12 @@
+# {{name}}
+describe {{name}}...
+
+# Examples
+
+## Example Name
+describe example...
+```cpp
+// example
+```
+
+repeat for more examples...

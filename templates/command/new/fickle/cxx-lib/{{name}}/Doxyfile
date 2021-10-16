@@ -1,0 +1,7 @@
+PROJECT_NAME = "{{name}}"
+
+INPUT = README.md include
+
+USE_MDFILE_AS_MAINPAGE = README.md
+
+GENERATE_LATEX = NO
