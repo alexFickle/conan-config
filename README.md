@@ -33,3 +33,14 @@ The generated project additionally contains a simple, working example.
 Usage: `conan new <name>/<version> --template fickle/cxx-header-only`
 
 Identical features to cxx-lib, just for a header only C++ library.
+
+## fickle/cxx-exe
+Usage: `conan new <name>/version --template fickle/cxx-exe`
+
+Identical features to cxx-lib, just for C++ executables.
+
+Splits source files into two targets.
+The first is a static library that can have unit tests written
+for it.
+The second is the executable that must have main in it but probably
+no other source files.

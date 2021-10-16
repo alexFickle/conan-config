@@ -1,0 +1,13 @@
+# {{name}}
+describe {{name}}...
+
+# Examples
+
+## Example Name
+describe example...
+```sh
+# example
+$ {{name}} --help
+```
+
+repeat for more examples...
