@@ -4,5 +4,5 @@
 
 TEST(example, itWorks)
 {
-    EXPECT_EQ(3, Add(1, 2));
+    EXPECT_EQ(3, {{name}}::Add(1, 2));
 }
