@@ -9,4 +9,5 @@ target_link_libraries(test_{{name}} PRIVATE
     {{name}}
     ${CONAN_LIBS}
 )
+target_include_directories(test_{{name}} PRIVATE ../src)
 gtest_discover_tests(test_{{name}})
