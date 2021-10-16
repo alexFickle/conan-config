@@ -26,17 +26,10 @@ if(LCOV_ENABLED)
 endif()
 
 # support cmake --install
-file(GLOB_RECURSE {{name}}_headers
-    include *.hpp *.h
-)
-set_target_properties({{name}}
-    PROPERTIES PUBLIC_HEADER
-    "{%raw%}${{%endraw%}{{name}}_headers{%raw%}}{%endraw%}"
-)
 install(TARGETS {{name}}
     DESTINATION "."
-    PUBLIC_HEADER DESTINATION include
     RUNTIME DESTINATION bin
     ARCHIVE DESTINATION lib
     LIBRARY DESTINATION lib
 )
+install(DIRECTORY include DESTINATION "${CMAKE_INSTALL_PREFIX}")
