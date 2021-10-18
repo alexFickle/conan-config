@@ -44,3 +44,15 @@ The first is a static library that can have unit tests written
 for it.
 The second is the executable that must have main in it but probably
 no other source files.
+
+## fickle/cxx-exp
+Usage: `conan new <name>/<version> --template fickle/cxx-exp`
+
+Very simple project structure intended to quickly experiment with something.
+Has no directories and a single source file.
+The code you are experimenting with and its tests go in the same source file.
+
+Features:
+* unit testing with gtest
+* optional code coverage with lcov using https://github.com/alexFickle/lcov-cmake
+* clang format configuration
